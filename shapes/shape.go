@@ -19,17 +19,12 @@ func Transpose(solid solids.Solid) Shape {
 	for _, v := range solid.Points {
 		var d1x float64
 		var d1y float64
-		var d2 float64
 
 		d1y = v.Y
 		d1x = v.X
-		d2 = v.Z
 
 		var psx float64
 		var psy float64
-
-		psx = (d1x / d2) * l
-		psy = (d1y / d2) * l
 
 		psx = d1x
 		psy = d1y
